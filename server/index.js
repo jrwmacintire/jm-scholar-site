@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 // Serve static files, such as main index.html page.
-app.use(express.static('public'));
+app.use(express.static('../public'));
 
 // app.get('/', (req, res) => {
 //     res.send("This server receives post requests at '/register-student' and '/register-school'");

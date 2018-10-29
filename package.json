@@ -1,0 +1,30 @@
+{
+  "name": "jm-scholar-site",
+  "version": "1.0.0",
+  "description": "Database for JMScholar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrwmacintire/jm-scholar-site.git"
+  },
+  "keywords": [
+    "Express",
+    "MongoDB",
+    "NoSQL",
+    "Mocha",
+    "etc."
+  ],
+  "author": "John MacIntire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrwmacintire/jm-scholar-site/issues"
+  },
+  "homepage": "https://github.com/jrwmacintire/jm-scholar-site#readme",
+  "devDependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.5"
+  }
+}
