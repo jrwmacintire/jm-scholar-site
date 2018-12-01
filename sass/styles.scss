@@ -1,0 +1,21 @@
+body {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+
+    div.form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin: auto;
+
+        form.form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

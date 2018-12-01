@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <title>JMScholar</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>JMScholar Submissions Server</h1>
+            <hr>
+            <p>Contact jrwmacintire@gmail.com for support.</p>
+            <hr>
+        </div>
+        <div class="form-container">
+            <h2>Test Form for Submissions</h2>
+            <form class="form" action="/submit-reg-form" method="POST" enctype="application/x-www-form-urlencoded">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" class="form-control" name="name" placeholder="Enter name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" name="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Primary Phone:</label>
+                    <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="highSchoolName">High School Name:</label>
+                    <input type="text" class="form-control" name="highSchoolName" placeholder="High School Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="highSchoolCode">High School Code</label>
+                    <input type="text" class="form-control" name="highSchoolCode" placeholder="High School Code">
+                </div>
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" class="form-control" name="title" placeholder="Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" class="form-control" name="city" placeholder="City" required>
+                </div>
+                <div class="form-group">
+                    <label for="states">State:</label>
+                    <select class="select-states" name="state" required>
+                        <option value="state1">State 1</option>
+                        <option value="state2">State 2</option>
+                        <option value="state3">State 3</option>
+                        <option value="state4">State 4</option>
+                        <option value="state5">State 5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="additionalContact1">Additional Contact:</label>
+                    <input type="text" class="form-control" name="additionalContact1" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="titles">Titles:</label>
+                    <select class="titles" name="titles">
+                        <option value="teacher">Teacher</option>
+                        <option value="counselor">Guidance Counselor</option>
+                        <option value="headOfDep">Head of Department</option>
+                        <option value="principal">Principal</option>
+                        <option value="vicePrincipal">Vice Principal</option>
+                        <option value="registrar">School Registrar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="addContactEmail1">Email</label>
+                    <input type="text" class="form-control" name="addContactEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="addContactPhone1">Phone</label>
+                    <input type="text" class="form-control" name="addContactPhone1" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <label for="additionalContact2">Additional Contact:</label>
+                    <input type="text" class="form-control" name="additionalContact2" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="titles">Titles:</label>
+                    <select class="titles" name="titles">
+                        <option value="teacher">Teacher</option>
+                        <option value="counselor">Guidance Counselor</option>
+                        <option value="headOfDep">Head of Department</option>
+                        <option value="principal">Principal</option>
+                        <option value="vicePrincipal">Vice Principal</option>
+                        <option value="registrar">School Registrar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="addContactEmail2">Email</label>
+                    <input type="text" class="form-control" name="addContactEmail2" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="addContactPhone2">Phone</label>
+                    <input type="text" class="form-control" name="addContactPhone2" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

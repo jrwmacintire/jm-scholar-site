@@ -1,0 +1,18 @@
+body {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif; }
+  body div.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto; }
+    body div.form-container form.form {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+
+/*# sourceMappingURL=styles.css.map */
