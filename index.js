@@ -49,6 +49,23 @@ const studentFormSchema = new mongoose.Schema({
 const StudentForm = mongoose.model('StudentForm', studentFormSchema);
 
 // Volunteer to Judge Form Schema
+const volunteerJudgeFormSchema = new mongoose.Schema({
+    email: String,
+    name: String,
+    occupation: String,
+    interestedIn: String,
+    comments: String
+});
+const VolunteerJudgeForm = mongoose.model('VolunteerJudgeForm', volunteerJudgeFormSchema);
+
+// Sponsor a Competition Form
+const donorFormSchema = new mongoose.Schema({
+    name: String,
+    schoolToSponsor: String,
+    occupation: String,
+    comments: String
+});
+const DonorForm = mongoose.model('DonorForm', donorFormSchema);
 
 // Connect to database
 mongoose.connect('mongodb://John:jefferson1776@ds261917.mlab.com:61917/jm-scholar-uploads', { useNewUrlParser: true });
@@ -72,7 +89,7 @@ app.post('/submit-hs-req-form', (req, res) => {
     // res.json(req.body);
     const data = new HSReqForm(req.body);
     data.save()
-        .then(item => res.send('Item saved to database!'))
+        .then(item => res.send('HS Request Form has been saved to database!'))
         .catch(err => res.status(400).send('Unable to save to database.'));
 });
 
@@ -83,7 +100,29 @@ app.post('/submit-student-app', (req, res) => {
     // res.json(req.body);
     const data = new StudentForm(req.body);
     data.save()
-        .then(item => res.send('Item saved to database!'))
+        .then(item => res.send('Student application form saved to database!'))
+        .catch(err => res.status(400).send('Unable to save to database.'));
+});
+
+// @route POST '/volunteer-to-judge'
+// @desc Intercepts POST requests from volunteer to judge form
+app.post('/volunteer-to-judge', (req, res) => {
+    console.log(`Volunteer to Judge Form submitted!`);
+    // res.json(req.body);
+    const data = new VolunteerJudgeForm(req.body);
+    data.save()
+        .then(item => res.send('Volunteer judge form saved to database!'))
+        .catch(err => res.status(400).send('Unable to save to database.'));
+});
+
+// @route POST '/become-a-donor'
+// @desc Intercepts POST requests from form to become a donor
+app.post('/become-a-donor', (req, res) => {
+    console.log(`Donor Form submitted!`);
+    // res.json(req.body);
+    const data = new DonorForm(req.body);
+    data.save()
+        .then(item => res.send('Volunteer judge form saved to database!'))
         .catch(err => res.status(400).send('Unable to save to database.'));
 });
 
