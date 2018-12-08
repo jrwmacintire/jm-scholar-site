@@ -48,7 +48,7 @@
                 </div>
                 <div class="form-group">
                     <label for="states">State:</label>
-                    <select class="select-states" name="state" required>
+                    <select class="select-states form-control" name="state" required>
                         <option value="state1">State 1</option>
                         <option value="state2">State 2</option>
                         <option value="state3">State 3</option>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="form-group">
                     <label for="titles">Titles:</label>
-                    <select class="titles" name="titles">
+                    <select class="titles form-control" name="titles">
                         <option value="teacher">Teacher</option>
                         <option value="counselor">Guidance Counselor</option>
                         <option value="headOfDep">Head of Department</option>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="form-group">
                     <label for="titles">Titles:</label>
-                    <select class="titles" name="titles">
+                    <select class="titles form-control" name="titles">
                         <option value="teacher">Teacher</option>
                         <option value="counselor">Guidance Counselor</option>
                         <option value="headOfDep">Head of Department</option>
@@ -141,7 +141,7 @@
                 </div>
                 <div class="form-group">
                     <label for="seniorStatus">Are you a senior in highschool?</label>
-                    <select class="seniorStatus" name="seniorStatus">
+                    <select class="form-control" name="seniorStatus">
                         <option value="graduatingMayJune">Yes, I graduate in May/June 2019.</option>
                         <option value="graduatingDecember">Yes, I graduate in December.</option>
                         <option value="nonSenior">No, I'm not graduating in 2019.</option>
@@ -149,38 +149,70 @@
                 </div>
                 <div class="form-group">
                     <label for="citizenStatus">Are you a citizen of the US?</label>
-                    <select class="citizenStatus" name="citizenStatus">
+                    <select class="form-control" name="citizenStatus">
                         <option value="citizen">Yes, I am a US citizen.</option>
                         <option value="nonCitizen">No, I am not a citizen.</option>
                     </select required>
                 </div>
                 <div class="form-group">
                     <label for="schoolName">Your School Name:</label>
-                    <input type="text" name="schoolName" placeholder="School name here..." required>
+                    <input type="text" class="form-control" name="schoolName" placeholder="School name here..." required>
                 </div>
                 <div class="form-group">
                     <label for="schoolCode">Your School Code:</label>
-                    <input type="text" name="schoolCode" placeholder="School code here..." required>
+                    <input type="text" class="form-control" name="schoolCode" placeholder="School code here..." required>
                 </div>
                 <div class="form-group">
                     <label for="schoolAddress">School Address:</label>
-                    <input type="text" name="schoolAddress" placeholder="School address here..." required>
+                    <input type="text" class="form-control" name="schoolAddress" placeholder="School address here..." required>
                 </div>
                 <div class="form-group">
                     <label for="schoolCity">School City:</label>
-                    <input type="text" name="schoolCity" placeholder="School city here..." required>
+                    <input type="text" class="form-control" name="schoolCity" placeholder="School city here..." required>
                 </div>
                 <div class="form-group">
                     <label for="schoolState">School State:</label>
-                    <input type="text" name="schoolState" placeholder="School state here..." required>
+                    <input type="text" class="form-control" name="schoolState" placeholder="School state here..." required>
                 </div>
                 <div class="form-group">
                     <label for="attendsParticipatingSchool">Are you a student at a Participating School?</label>
-                    <select class="participatingStatus" name="attendsParticipatingSchool">
+                    <select class="form-control" name="attendsParticipatingSchool">
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                         <option value="dontKnow">I don't know</option>
                     </select required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Donor Form Tester</h2>
+            <form class="form" action="/become-a-donor" method="POST" enctype="application/x-www-form-urlencoded">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" name="email" placeholder="Email here...">
+                </div>
+                <div class="form-group">
+                    <label for="schoolToSponsor">Are you interested in sponsoring a specific school?</label>
+                    <select class="form-control" name="hasSponsoredSchool">
+                        <option value="hasSchoolToSponsor">Yes, I have a school I'd like to sponsor.</option>
+                        <option value="noSchoolToSponsor">No, I do not have a specific school sponsor.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" class="form-control" name="occupation" placeholder="Enter your occupation here...">
+                </div>
+                <div class="form-group">
+                    <label for="comments">Anything else?</label>
+                    <textarea class="form-control" name="comments" rows="8" cols="80"></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
