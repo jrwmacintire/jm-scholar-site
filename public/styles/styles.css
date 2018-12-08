@@ -9,6 +9,8 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: auto; }
+    body div.form-container h2 {
+      margin: 2rem 0; }
     body div.form-container form.form {
       width: 400px;
       display: flex;
